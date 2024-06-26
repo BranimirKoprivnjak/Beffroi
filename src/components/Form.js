@@ -53,7 +53,7 @@ const Contact = () => {
     if (values['honey'] !== '') return;
 
     try {
-      await emailjs.send('service_yfbglqr', 'template_y7acog9', values, 'ggRkLd__o9aAoEzjD');
+      await emailjs.send('service_mcr7fwg', 'template_y7acog9', values, 'ggRkLd__o9aAoEzjD');
       setIsSuccess(true);
     } catch (error) {}
   };

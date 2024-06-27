@@ -33,9 +33,6 @@ const Hero = () => {
         xs={12}
         md={6}
         order={{ xs: 1, md: 2 }}
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
       >
         <Box
           component={'img'}
@@ -44,8 +41,6 @@ const Hero = () => {
           width={1}
           src={'home2.png'}
           alt="..."
-          boxShadow={3}
-          borderRadius={2}
           maxWidth={600}
           sx={{
             filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',

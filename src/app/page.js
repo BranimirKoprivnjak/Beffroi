@@ -23,29 +23,40 @@ const IndexView = () => {
     };
 
     handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, []);
 
   return (
     <>
       <Box sx={{ overflowX: 'hidden' }}>
         <Main bgcolor={'background.paper'}>
-          {<Video
-            src={videoLoop}
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls={false}
-            className={`${styles.video} ${styles.hide}`}
-          ></Video>}
+          <Box sx={{ position: 'relative', width: '100%', height: '100%' }}> 
+            <Video
+              src={videoLoop}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              className={`${styles.video} ${styles.hide}`}
+            ></Video>
+            {!isMobile && <Typography
+              variant='h3'
+              sx={{
+                position: 'absolute',
+                top: '45%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: 'white',
+                textAlign: 'center',
+                zIndex: 1,
+              }}
+            >
+              Lokalni eksperti,{isMobile &&<br/>} globalan doseg.
+            </Typography>}
+          </Box>
+          {isMobile && <HomeSectionOne isMobile = {isMobile} padding={2}/>}
           <Container>
-            <HomeSectionOne />
+            {!isMobile && <HomeSectionOne isMobile = {isMobile} padding={0}/>}
             <HomeSectionTwo />
             <Box marginBottom={4}>
               <Typography
@@ -57,7 +68,7 @@ const IndexView = () => {
                 Kontaktirajte nas
               </Typography>
               <Typography color="text.secondary" align={'center'} marginBottom={4}>
-                Vrata se otvaraju onima koji kucaju. Zajedno smo u ovome, spremni stati uz tebe kad postane teško. 
+                Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
               </Typography>
             </Box>
             <Form />

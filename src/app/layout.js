@@ -11,6 +11,7 @@ import Page from '../components/Page';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
+import '../../styles/globals.css'
 
 /* eslint-disable react/prop-types */
 export default function RootLayout({ children }) {
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
+          href="favicon.png"
         />
         <meta name="theme-color" content="#ffffff" />
         <meta
@@ -35,25 +36,21 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
+          content="LogoHR.png"
         />
         <meta
           property="og:title"
-          content="theFront | UI Kit by Maccarian Agency."
+          content="BEFFROI Nekretnine"
         />
         <meta
           property="og:description"
-          content="A modern design system for your new landing and web pages."
+          content="BEFFROI Nekretnine nudi širok izbor nekretnina različitih vrsta, uključujući stanove, kuće, zemljišta i poslovne prostore."
         />
         <meta
           property="og:url"
-          content="https://thefront.maccarianagency.com/"
+          content="https://beffroi.eu"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-          rel="stylesheet"
-        />
         <link 
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" 
           rel="stylesheet"

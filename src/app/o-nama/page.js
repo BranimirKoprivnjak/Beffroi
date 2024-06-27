@@ -25,7 +25,7 @@ const Page = () => {
           <Grid container spacing={6}>
             <Grid item container xs={12} md={6}>
                 <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-                  <Box marginBottom={3}>
+                  <Box>
                     <Typography variant="h6" component="p" color="text.secondary">
                       Hrvatska je zemlja nevjerojatne ljepote i ogomnih potencijala. Barem tako vjerujemo mi u BEFFROI. 
                       Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. 
@@ -45,9 +45,6 @@ const Page = () => {
                 justifyContent={'center'}
                 xs={12}
                 md={6}
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
               >
                 <Box
                   component={'img'}
@@ -57,7 +54,6 @@ const Page = () => {
                   src={'onama.jpg'}
                   alt="..."
                   boxShadow={3}
-                  borderRadius={2}
                   maxWidth={600}
                   sx={{
                     filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',

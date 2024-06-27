@@ -22,7 +22,7 @@ const Page = () => {
               xs={12}
               md={6}
             >
-              <Box marginBottom={4}>
+              <Box>
                 <Typography
                   variant={'h3'}
                   sx={{ fontWeight: 700 }}
@@ -31,7 +31,7 @@ const Page = () => {
                   Kontaktirajte nas
                 </Typography>
                 <Typography color="text.secondary" marginBottom={2}>
-                  Vrata se otvaraju onima koji kucaju. Zajedno smo u ovome, spremni stati uz tebe kad postane teško. 
+                  Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
                 </Typography>
                 <Typography
                   marginBottom={2}

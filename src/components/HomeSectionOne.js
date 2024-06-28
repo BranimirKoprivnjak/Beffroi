@@ -60,7 +60,9 @@ const Hero = ({ isMobile, padding }) => {
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
               BEFFROI Nekretnine nudi širok izbor nekretnina različitih vrsta, uključujući stanove, kuće, zemljišta i poslovne prostore. 
-              {isMobile && <br/>} Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
+            </Typography>
+            <Typography variant="h6" component="p" marginTop={isMobile ? 2 : 0} paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
+              Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
             </Typography>
           </Box>
         </Box>

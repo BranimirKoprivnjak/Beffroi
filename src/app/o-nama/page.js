@@ -45,6 +45,15 @@ const Page = () => {
                       kako bi se zaštitili vaši interesi i uklonili svi rizici. {isMobile && <br/>}
                       Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
                     </Typography>
+                    <Typography variant='h5' component="p" sx={{fontWeight: 500}} marginTop={1}>
+                      BEFFROI je… 
+                    </Typography>
+                    <Typography variant="h6" marginTop={1.5} sx={{fontWeight: 300}}>
+                      Naziv za najjaču kulu srednjovjekovne tvrđave i simbol gradskih sloboda. 
+                      <br/> BEFFROI simbolizira odgovornost koju građanstvo ima u zaštiti svojih zajednica, očuvanju svoje baštine i 
+                      doprinosu zajedničkoj priči koja definira njihovo društvo. Kao nepokolebljivi čuvar univerzalnih vrijednosti, 
+                      BEFFROI nas podsjeća da građanstvo nije samo pravni status već aktivan, stalan napor da se oblikuje i njeguje mjesto koje zovemo domom.
+                    </Typography>
                   </Box>
                 </Box>
               </Grid>

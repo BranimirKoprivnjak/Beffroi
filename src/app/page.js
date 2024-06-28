@@ -53,8 +53,8 @@ const IndexView = () => {
               Lokalni eksperti,{isMobile &&<br/>} globalan doseg.
             </Typography>}
           </Box>
+          {isMobile && <HomeSectionOne isMobile = {isMobile} padding={2}/>}
           <Container>
-            {isMobile && <HomeSectionOne isMobile = {isMobile} padding={2}/>}
             {!isMobile && <HomeSectionOne isMobile = {isMobile} padding={0}/>}
             <HomeSectionTwo isMobile = {isMobile}/>
             <Box marginBottom={4}>

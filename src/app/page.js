@@ -29,7 +29,7 @@ const IndexView = () => {
     <>
         <Main bgcolor={'background.paper'}>
           <Box sx={{ position: 'relative', width: '100%', height: '100%' }}> 
-            <Video
+            {!isMobile && <Video
               src={videoLoop}
               autoPlay
               muted
@@ -37,7 +37,7 @@ const IndexView = () => {
               playsInline
               controls={false}
               className={`${styles.video} ${styles.hide}`}
-            ></Video>
+            ></Video>}
             {!isMobile && <Typography
               variant='h3'
               sx={{

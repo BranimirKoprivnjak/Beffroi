@@ -27,7 +27,6 @@ const IndexView = () => {
 
   return (
     <>
-      <Box sx={{ overflowX: 'hidden' }}>
         <Main bgcolor={'background.paper'}>
           <Box sx={{ position: 'relative', width: '100%', height: '100%' }}> 
             <Video
@@ -57,11 +56,11 @@ const IndexView = () => {
           {isMobile && <HomeSectionOne isMobile = {isMobile} padding={2}/>}
           <Container>
             {!isMobile && <HomeSectionOne isMobile = {isMobile} padding={0}/>}
-            <HomeSectionTwo />
+            <HomeSectionTwo isMobile = {isMobile}/>
             <Box marginBottom={4}>
               <Typography
                 variant={'h3'}
-                sx={{ fontWeight: 700 }}
+                sx={{ fontWeight: 500 }}
                 align={'center'}
                 gutterBottom
               >
@@ -74,7 +73,6 @@ const IndexView = () => {
             <Form />
           </Container>
         </Main>
-      </Box>
     </>
   );
 };

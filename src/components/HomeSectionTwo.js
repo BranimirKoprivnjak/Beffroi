@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-const Hero = () => {
+const Hero = ({ isMobile }) => {
   const theme = useTheme();
 
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -17,10 +17,10 @@ const Hero = () => {
       <Grid item container xs={12} md={6} alignItems={'center'} order={{ xs: 2, md: 1 }}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">
+            <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
               Više od 40% kupoprodaja u RH ostvare strani državljani, stoga je prisutnost van domaćeg tržišta ključna. 
-              Upravo zato, djelujemo globalno - i to nas čini posebnima. 
-              Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
+              {isMobile && <br/>} Upravo zato, djelujemo globalno - i to nas čini posebnima. 
+              {isMobile && <br/>} Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
             </Typography>
           </Box>
         </Box>
@@ -39,7 +39,7 @@ const Hero = () => {
           loading="lazy"
           height={1}
           width={1}
-          src={'home2.png'}
+          src={'home2.JPG'}
           alt="..."
           maxWidth={600}
           sx={{

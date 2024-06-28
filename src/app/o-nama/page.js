@@ -1,5 +1,6 @@
 'use client'
 
+import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/material/styles';
@@ -15,8 +16,17 @@ const Page = () => {
     defaultMatches: true,
   });
 
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    handleResize();
+  }, []);
+
   return (
-    <Box sx={{ overflowX: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
         <Container>
           <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
@@ -26,13 +36,13 @@ const Page = () => {
             <Grid item container xs={12} md={6}>
                 <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
                   <Box>
-                    <Typography variant="h6" component="p" color="text.secondary">
-                      Hrvatska je zemlja nevjerojatne ljepote i ogomnih potencijala. Barem tako vjerujemo mi u BEFFROI. 
-                      Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. 
-                      Naoružani znanjem, strpljenjem i željom za napretkom, odlučili smo našim klijentima pružiti besprijekornu uslugu, i putem izgraditi bolju Hrvatsku. 
+                    <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
+                      Hrvatska je zemlja nevjerojatne ljepote i ogomnih potencijala.{isMobile && <br/>} Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
+                      Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. {isMobile && <br/>} 
+                      Naoružani znanjem, strpljenjem i željom za napretkom, odlučili smo našim klijentima pružiti besprijekornu uslugu, i putem izgraditi bolju Hrvatsku. {isMobile && <br/>} 
                       Naš tim stručnjaka pruža sveobuhvatnu podršku, od početnog savjetovanja i procjene vrijednosti nekretnine, do marketinških aktivnosti, 
-                      organizacije razgledavanja i vođenja pregovora. Naši pravni stručnjaci jamče da će svi pravni aspekti biti adresirani s posebnom pažnjom 
-                      kako bi se zaštitili vaši interesi i uklonili svi rizici.
+                      organizacije razgledavanja i vođenja pregovora. {isMobile && <br/>} Naši pravni stručnjaci jamče da će svi pravni aspekti biti adresirani s posebnom pažnjom 
+                      kako bi se zaštitili vaši interesi i uklonili svi rizici. {isMobile && <br/>}
                       Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
                     </Typography>
                   </Box>
@@ -63,7 +73,6 @@ const Page = () => {
           </Grid>
         </Container>
       </Main>
-    </Box>
   );
 };
 

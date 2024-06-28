@@ -45,7 +45,9 @@ const Hero = ({ isMobile, padding }) => {
                 transform: 'translate(-50%, -50%)',
                 color: 'white',
                 textAlign: 'center',
-                fontSize: '1.4rem',
+                fontSize: '1.5rem',
+                fontWeight: 600,
+                textShadow: '2px 2px #363940',
                 zIndex: 1,
               }}
             >
@@ -56,9 +58,9 @@ const Hero = ({ isMobile, padding }) => {
       <Grid item container xs={12} md={6} alignItems={'center'}>
         <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding}>
+            <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
               BEFFROI Nekretnine nudi širok izbor nekretnina različitih vrsta, uključujući stanove, kuće, zemljišta i poslovne prostore. 
-              Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
+              {isMobile && <br/>} Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
             </Typography>
           </Box>
         </Box>

@@ -12,7 +12,6 @@ import Form from 'components/Form'
 
 const Page = () => {
   return (
-    <Box sx={{ overflowX: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
         <Container>
           <Grid container spacing={6}>
@@ -62,7 +61,6 @@ const Page = () => {
           </Grid>
         </Container>
       </Main>
-    </Box>
   );
 };
 

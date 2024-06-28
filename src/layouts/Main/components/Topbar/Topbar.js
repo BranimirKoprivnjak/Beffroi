@@ -6,6 +6,7 @@ import { Link } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import Divider from '@mui/material/Divider';
+import { NavItem } from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
@@ -62,6 +63,14 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           >
             Vrijednosti
           </Link>
+        </Box>
+        <Box marginLeft={4}>
+          <NavItem
+            title={'Blog'}
+            id={'blog-pages'}
+            items={blogPages}
+            colorInvert={colorInvert}
+          />
         </Box>
         <Box marginLeft={4}>
           <Link

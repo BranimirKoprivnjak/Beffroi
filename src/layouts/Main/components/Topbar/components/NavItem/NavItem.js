@@ -102,6 +102,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
                       ? alpha(theme.palette.primary.main, 0.1)
                       : 'transparent',
                   fontWeight: activeLink === p.href ? 600 : 400,
+                  textAlign: 'left'
                 }}
               >
                 {p.title}

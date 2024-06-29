@@ -20,7 +20,7 @@ const Hero = ({ isMobile }) => {
             <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
               Više od 40% kupoprodaja u RH ostvare strani državljani, stoga je prisutnost van domaćeg tržišta ključna. 
               {isMobile && <br/>} Upravo zato, djelujemo globalno - i to nas čini posebnima. 
-              {isMobile && <br/>} Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
+              <br/> Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
             </Typography>
           </Box>
         </Box>

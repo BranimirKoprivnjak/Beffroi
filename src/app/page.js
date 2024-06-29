@@ -39,7 +39,7 @@ const IndexView = () => {
               className={`${styles.video} ${styles.hide}`}
             ></Video>}
             {!isMobile && <Typography
-              variant='h3'
+              variant='h2'
               sx={{
                 position: 'absolute',
                 top: '45%',
@@ -47,7 +47,9 @@ const IndexView = () => {
                 transform: 'translate(-50%, -50%)',
                 color: 'white',
                 textAlign: 'center',
+                textShadow: '2px 2px #363940',
                 zIndex: 1,
+                fontWeight: 500
               }}
             >
               Lokalni eksperti,{isMobile &&<br/>} globalan doseg.

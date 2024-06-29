@@ -37,6 +37,70 @@ const Page = () => {
                 id="panel1-header"
                 sx={{ fontWeight: 500 }}
               >
+                Koliki je porez na promet nekretnina u RH?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontWeight: 300 }}>
+                Porez na kupovinu nekretnine je 3% od dogovorene cijene ili tržišne vrijednosti nekretnine prema procjeni porezne uprave. 
+                {isMobile && <br/>} Osoba koja kupuje kuću može biti oslobođena plaćanja poreza ako ispuni određene uvjete.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+                sx={{ fontWeight: 500 }}
+              >
+                Tko treba prijaviti porez na kupovinu nekretnine? ?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontWeight: 300 }}>
+                Prijavu poreza smatra se obavljenom kada se dokumenti dostave javnom bilježniku ili sudu. {isMobile && <br/>}
+                Osoba koja kupuje nekretninu mora podnijeti obrazac samo ako dokumente nije ovjerio javni bilježnik ili ih nije izdao sud ili javno tijelo. {isMobile && <br/>}
+                Porezna ispostava donosi privremeno ili konačno rješenje o plaćanju poreza na kupovinu nekretnina. {isMobile && <br/>}
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+                sx={{ fontWeight: 500 }}
+              >
+                Koji su uvjeti za kupnju nekretnine u Hrvatskoj stranim državljanima?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontWeight: 300 }}>
+                Državljani ili pravna osoba iz država članica Europske unije stječu pravo vlasništva nad nekretninama u 
+                Republici Hrvatskoj pod pretpostavkama koje vrijede za stjecanje prava vlasništva za državljane Republike Hrvatske i 
+                pravne osobe sa sjedištem u Republici Hrvatskoj, izuzev nekretnina u izuzetim područjima kao što je poljoprivredno zemljište te za 
+                stjecanje prava vlasništva nije potrebna suglasnost ministarstva pravosuđa. {isMobile && <br/>}Državljanima ili pravnim osobama izvan država članica Europske unije 
+                za stjecanje prava vlasništva nad nekretninama u Republici Hrvatskoj potrebna je suglasnost ministarstva pravosuđa,
+                a istu mogu dobiti samo ako postoji uzajamnost za stjecanje prava vlasništva na nekretninama u Republici Hrvatskoj između države državljanina 
+                i Republike Hrvatske, a popis država s kojima postoji uzajamnost možete provjeriti u rubrici Informacije o uzajamnosti 
+                u stjecanju prava vlasništva nekretnina između Republike Hrvatske 
+                i država izvan Europske unije, Republike Island, Kneževine Lihtenštajn, Kraljevine Norveške te Švicarske Konfederacije.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+                sx={{ fontWeight: 500 }}
+              >
+                Tko priprema ugovore o kupovini ili najmu nekretnina i gdje se ovjeravaju?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontWeight: 300 }}>
+               Naš pravni tim priprema ugovore. {isMobile && <br/>}Ugovore o kupovini ovjerava javni bilježnik uz prisutnost agenta, 
+               dok se ugovori o najmu mogu ovjeriti na zahtjev stranaka. {isMobile && <br/>}Ovjera se obavlja kod javnog bilježnika u Hrvatskoj ili u inozemstvu uz Apostille.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+                sx={{ fontWeight: 500 }}
+              >
                 Što je formalizacija ugovora o najmu?
               </AccordionSummary>
               <AccordionDetails sx={{ fontWeight: 300 }}>

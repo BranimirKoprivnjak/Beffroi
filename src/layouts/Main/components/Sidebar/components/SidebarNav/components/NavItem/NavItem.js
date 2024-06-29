@@ -24,6 +24,7 @@ const NavItem = ({ title, items }) => {
       <Accordion
         disableGutters
         elevation={0}
+        marginBottom={2}
         sx={{ backgroundColor: 'transparent' }}
       >
         <AccordionSummary
@@ -39,7 +40,7 @@ const NavItem = ({ title, items }) => {
             {title}
           </Typography>
         </AccordionSummary>
-        <AccordionDetails sx={{ padding: 0 }}>
+        <AccordionDetails sx={{ paddingBottom: 3 }}>
           <Grid container spacing={1}>
             {items.map((p, i) => (
               <Grid item key={i} xs={12}>
@@ -59,12 +60,14 @@ const NavItem = ({ title, items }) => {
                         ? alpha(theme.palette.primary.main, 0.1)
                         : 'transparent',
                     fontWeight: activeLink === p.href ? 600 : 400,
+                    textAlign: 'left',
+                    padding: 0,
+                    paddingLeft: 2
                   }}
                 >
                   {p.title}
                   {p.isNew && (
                     <Box
-                      padding={0.5}
                       display={'inline-flex'}
                       borderRadius={1}
                       bgcolor={'primary.main'}

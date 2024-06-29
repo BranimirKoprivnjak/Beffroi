@@ -9,6 +9,8 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Typography } from '@mui/material';
 
+import Image from 'next/image'
+
 const Page = () => {
   const theme = useTheme();
 

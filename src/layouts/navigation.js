@@ -190,23 +190,27 @@ const pages = {
   blog: [
     {
       title: 'Kako uspješno prodati nekretninu?',
-      href: '/blog/kako-uspjesno-prodati-nekretninu',
+      href: '/kako-uspjesno-prodati-nekretninu',
     },
     {
       title: 'Kako bezbrižno kupiti nekretninu?',
-      href: '/blog/kako-bezbrizno-kupiti-nekretninu',
+      href: '/kako-bezbrizno-kupiti-nekretninu',
+    },
+    {
+      title: 'Koliko vrijedi moja nekretnina?',
+      href: '/vrijednost-nekretnine',
     },
     {
       title: 'Razumijevanje hrvatskog tržišta nekretnina: Ključne statistike',
-      href: '/blog/razumijevanje-hrvatskog-trzista-nekretnina',
+      href: '/razumijevanje-hrvatskog-trzista-nekretnina',
     },
     {
       title: 'Kako prodati nekretninu uz pomoć agencije',
-      href: '/blog/kako-prodati-nekretninu-uz-pomoc-agencije',
+      href: '/kako-prodati-nekretninu-uz-pomoc-agencije',
     },
     {
       title: 'Kako izbjeći zamke u procesu kupoprodaje nekretnina',
-      href: '/blog/kako-izbjeci-zamke-u-procesu-kuporodaje-nekretnina',
+      href: '/kako-izbjeci-zamke-u-procesu-kuporodaje-nekretnina',
     },
   ],
   portfolio: [

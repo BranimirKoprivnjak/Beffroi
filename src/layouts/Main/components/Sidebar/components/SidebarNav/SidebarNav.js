@@ -54,10 +54,16 @@ const SidebarNav = ({ pages }) => {
             href="/vrijednosti"
             color={'text.primary'}
             sx={{ display: 'flex', alignItems: 'center' }}
-            marginBottom={1}
           >
             Vrijednosti
         </Link>
+        <Box marginBottom={-0.5} marginTop={-0.5}>
+          <NavItem
+              title={'Blog'}
+              id={'blog-pages'}
+              items={blogPages}
+          />
+        </Box>
         <Link
             underline="none"
             component="a"

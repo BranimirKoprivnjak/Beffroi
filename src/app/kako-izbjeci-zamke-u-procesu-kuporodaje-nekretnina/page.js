@@ -29,7 +29,7 @@ const Page = () => {
   return (
       <Main bgcolor={'background.paper'}>
         <Container>
-          <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }} marginBottom={4}>
+          <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700, textAlign: 'left' }} marginBottom={4}>
             Kako izbjeći zamke u procesu kupoprodaje nekretnina
           </Typography>
           <Grid container spacing={4}>

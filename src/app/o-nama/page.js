@@ -37,7 +37,7 @@ const Page = () => {
                 <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
                   <Box>
                     <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
-                      Hrvatska je zemlja nevjerojatne ljepote i ogomnih potencijala.{isMobile && <br/>} Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
+                      Hrvatska je zemlja nevjerojatne ljepote i ogromnih potencijala.{isMobile && <br/>} Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
                       Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. {isMobile && <br/>} 
                       Naoružani znanjem, strpljenjem i željom za napretkom, odlučili smo našim klijentima pružiti besprijekornu uslugu, i putem izgraditi bolju Hrvatsku. <br/>
                       Naš tim stručnjaka pruža sveobuhvatnu podršku, od početnog savjetovanja i procjene vrijednosti nekretnine, do marketinških aktivnosti, 

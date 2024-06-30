@@ -58,7 +58,7 @@ const Page = () => {
             <Grid item container xs={12} md={6}>
               <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
                 <Box>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Zašto odabrati agenciju za nekretnine?
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>

@@ -52,7 +52,8 @@ const IndexView = () => {
                 fontWeight: 500
               }}
             >
-              Lokalni eksperti,{isMobile &&<br/>} globalan doseg.
+              Lokalni eksperti, <br/>
+              globalan doseg.
             </Typography>}
           </Box>
           {isMobile && <HomeSectionOne isMobile = {isMobile} padding={2}/>}

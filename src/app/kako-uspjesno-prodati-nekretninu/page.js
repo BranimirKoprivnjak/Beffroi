@@ -29,7 +29,7 @@ const Page = () => {
   return (
       <Main bgcolor={'background.paper'}>
         <Container>
-          <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }} marginBottom={4}>
+          <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700, textAlign: 'left' }} marginBottom={4}>
             Kako uspješno prodati nekretninu?
           </Typography>
           <Grid container spacing={4}>
@@ -63,7 +63,7 @@ const Page = () => {
                     {isMobile && <br/>} U ovom članku, istražit ćemo ključne korake koje trebate poduzeti kako biste uspješno prodali svoju nekretninu, 
                     i kako vam agencija može biti od pomoći u tom procesu.
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Korak 1: Procjena vrijednosti nekretnine
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
@@ -72,7 +72,7 @@ const Page = () => {
                     Agencija za nekretnine može vam pomoći pružanjem točne procjene vrijednosti temeljene na trenutnim tržišnim uvjetima 
                     i usporedbi sličnih nekretnina.
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Korak 2: Priprema nekretnine za prodaju
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
@@ -80,7 +80,7 @@ const Page = () => {
                     To uključuje čišćenje, dekoriranje, manje popravke i možda čak i home staging. {isMobile && <br/>} 
                     Agencija vam može dati savjete kako da vaša nekretnina zasja u najboljem svjetlu i privuče potencijalne kupce.
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Korak 3: Oglašavanje nekretnine
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
@@ -88,21 +88,21 @@ const Page = () => {
                     Agencija za nekretnine može vašu nekretninu oglašavati na svojoj web stranici, u tiskanim medijima, na društvenim mrežama 
                     i na online platformama za prodaju nekretnina. {isMobile && <br/>}Profesionalne fotografije i detaljni opisi povećavaju šanse za prodaju.
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Korak 4: Pregovaranje i prihvaćanje ponude
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
                     Kada primite ponudu, važno je znati pregovarati. {isMobile && <br/>}Agencija za nekretnine može vam pomoći da procijenite ponudu 
                     i savjetovati vas o najboljem postupku. {isMobile && <br/>}Ako se odlučite prihvatiti ponudu, agencija će voditi proces do završetka prodaje.
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Korak 5: Pravni postupak i završetak prodaje
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
                     Prodaja nekretnine uključuje pravne postupke kao što su izrada predugovora, provjera dokumentacije i potpisivanje kupoprodajnog ugovora. {isMobile && <br/>} 
                     Agencija za nekretnine može vam pomoći u svim pravnim aspektima, osiguravajući da prodaja prođe glatko i bez problema. {isMobile && <br/>}
                   </Typography>
-                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
+                  <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500, textAlign: 'left' }}>
                     Zaključak
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>

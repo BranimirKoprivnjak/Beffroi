@@ -51,7 +51,7 @@ const Page = () => {
                 id="panel1-header"
                 sx={{ fontWeight: 500 }}
               >
-                Tko treba prijaviti porez na kupovinu nekretnine? ?
+                Tko treba prijaviti porez na kupovinu nekretnine?
               </AccordionSummary>
               <AccordionDetails sx={{ fontWeight: 300 }}>
                 Prijavu poreza smatra se obavljenom kada se dokumenti dostave javnom bilježniku ili sudu. {isMobile && <br/>}

@@ -58,12 +58,18 @@ const Hero = ({ isMobile, padding }) => {
       <Grid item container xs={12} md={6} alignItems={'center'}>
         <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
+            {!isMobile && <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
               BEFFROI Nekretnine nudi širok izbor nekretnina različitih vrsta, uključujući stanove, kuće, zemljišta i poslovne prostore. 
-            </Typography>
-            <Typography variant="h6" component="p" color="text.secondary" marginTop={isMobile ? 2 : 0} paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
+            </Typography>}
+            {isMobile && <Typography variant="h6" component="p" color="text.secondary" paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300, textAlign: 'center' }}>
+              BEFFROI Nekretnine nudi širok izbor nekretnina različitih vrsta, uključujući stanove, kuće, zemljišta i poslovne prostore. 
+            </Typography>}
+            {!isMobile && <Typography variant="h6" component="p" color="text.secondary" marginTop={isMobile ? 2 : 0} paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300 }}>
               Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
-            </Typography>
+            </Typography>}
+            {isMobile && <Typography variant="h6" component="p" color="text.secondary" marginTop={isMobile ? 2 : 0} paddingLeft={padding} paddingRight={padding} sx={{ fontWeight: 300, textAlign: 'center' }}>
+              Bez obzira tražite li dom, investicijsku priliku ili poslovni prostor, mi smo ovdje da vam pomognemo ostvariti vaše ciljeve.
+            </Typography>}
           </Box>
         </Box>
       </Grid>

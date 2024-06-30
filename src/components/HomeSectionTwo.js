@@ -17,11 +17,16 @@ const Hero = ({ isMobile }) => {
       <Grid item container xs={12} md={6} alignItems={'center'} order={{ xs: 2, md: 1 }}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
+            {!isMobile && <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
               Više od 40% kupoprodaja u RH ostvare strani državljani, stoga je prisutnost van domaćeg tržišta ključna. 
               {isMobile && <br/>} Upravo zato, djelujemo globalno - i to nas čini posebnima. 
               <br/> Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
-            </Typography>
+            </Typography>}
+            {isMobile && <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300, textAlign: 'center' }}>
+              Više od 40% kupoprodaja u RH ostvare strani državljani, stoga je prisutnost van domaćeg tržišta ključna. 
+              {isMobile && <br/>} Upravo zato, djelujemo globalno - i to nas čini posebnima. 
+              <br/> Dobrodošli u našu zajednicu gdje svaka kupoprodaja nije samo posao, već prilika za stvaranje doživotnih prijateljstava i suradnji. 
+            </Typography>}
           </Box>
         </Box>
       </Grid>

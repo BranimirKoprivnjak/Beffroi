@@ -29,19 +29,22 @@ const Page = () => {
   return (
       <Main bgcolor={'background.paper'}>
         <Container>
-          <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
+          {!isMobile && <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
             O nama
-          </Typography>
+          </Typography>}
+          {isMobile && <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700, textAlign: 'center' }}>
+            O nama
+          </Typography>}
           <Grid container spacing={6}>
             <Grid item container xs={12} md={6}>
                 <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-                  <Box>
+                  {!isMobile && <Box>
                     <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300 }}>
-                      Hrvatska je zemlja nevjerojatne ljepote i ogromnih potencijala.{isMobile && <br/>} Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
-                      Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. {isMobile && <br/>} 
+                      Hrvatska je zemlja nevjerojatne ljepote i ogromnih potencijala. Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
+                      Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše.
                       Naoružani znanjem, strpljenjem i željom za napretkom, odlučili smo našim klijentima pružiti besprijekornu uslugu, i putem izgraditi bolju Hrvatsku. <br/>
                       Naš tim stručnjaka pruža sveobuhvatnu podršku, od početnog savjetovanja i procjene vrijednosti nekretnine, do marketinških aktivnosti, 
-                      organizacije razgledavanja i vođenja pregovora. {isMobile && <br/>} Naši pravni stručnjaci jamče da će svi pravni aspekti biti adresirani s posebnom pažnjom 
+                      organizacije razgledavanja i vođenja pregovora. Naši pravni stručnjaci jamče da će svi pravni aspekti biti adresirani s posebnom pažnjom 
                       kako bi se zaštitili vaši interesi i uklonili svi rizici.
                     </Typography>
                     <Typography variant='h5' component="p" sx={{fontWeight: 500}} marginTop={4}>
@@ -53,7 +56,26 @@ const Page = () => {
                       doprinosu zajedničkoj priči koja definira njihovo društvo. {isMobile && <br/>}Kao nepokolebljivi čuvar univerzalnih vrijednosti, 
                       BEFFROI nas podsjeća da građanstvo nije samo pravni status već aktivan, stalan napor da se oblikuje i njeguje mjesto koje zovemo domom.
                     </Typography>
-                  </Box>
+                  </Box>}
+                  {isMobile && <Box>
+                    <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 300, textAlign: 'center' }}>
+                      Hrvatska je zemlja nevjerojatne ljepote i ogromnih potencijala. Barem tako vjerujemo mi u BEFFROI. {isMobile && <br/>} 
+                      Nakon obrazovnih i profesionalnih iskustava diljem svijeta, naši osnivači uvjerili su se da je doma najljepše. 
+                      Naoružani znanjem, strpljenjem i željom za napretkom, odlučili smo našim klijentima pružiti besprijekornu uslugu, i putem izgraditi bolju Hrvatsku. <br/>
+                      Naš tim stručnjaka pruža sveobuhvatnu podršku, od početnog savjetovanja i procjene vrijednosti nekretnine, do marketinških aktivnosti, 
+                      organizacije razgledavanja i vođenja pregovora. Naši pravni stručnjaci jamče da će svi pravni aspekti biti adresirani s posebnom pažnjom 
+                      kako bi se zaštitili vaši interesi i uklonili svi rizici.
+                    </Typography>
+                    <Typography variant='h5' component="p" sx={{fontWeight: 500, textAlign: 'center'}} marginTop={4}>
+                      BEFFROI je… 
+                    </Typography>
+                    <Typography variant="h6" marginTop={1.5} sx={{fontWeight: 300, textAlign: 'center'}}>
+                      Naziv za najjaču kulu srednjovjekovne tvrđave i simbol gradskih sloboda. 
+                      <br/> BEFFROI simbolizira odgovornost koju građanstvo ima u zaštiti svojih zajednica, očuvanju svoje baštine i 
+                      doprinosu zajedničkoj priči koja definira njihovo društvo. {isMobile && <br/>}Kao nepokolebljivi čuvar univerzalnih vrijednosti, 
+                      BEFFROI nas podsjeća da građanstvo nije samo pravni status već aktivan, stalan napor da se oblikuje i njeguje mjesto koje zovemo domom.
+                    </Typography>
+                  </Box>}
                 </Box>
               </Grid>
               <Grid

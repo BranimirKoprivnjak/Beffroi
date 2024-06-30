@@ -125,7 +125,7 @@ const Page = () => {
               Kontaktirajte nas
             </Typography>
             <Typography color="text.secondary" align={'center'} marginBottom={4}>
-              Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
+              Na nikad dinamičnijem tržištu nekretnina, učinit ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
             </Typography>
           </Box>
           <Form />

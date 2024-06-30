@@ -83,7 +83,7 @@ const Page = () => {
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
                     Strani investitori
                   </Typography>
-                  <ul>
+                  <ul style={{ paddingLeft: 16 }}>
                     <li style={{ fontWeight: 300 }}>Strani kupci sudjelovali su u ca. 40% svih nekretninskih transakcija u 2023. (taj je omjer bio 14% u 2010.)</li>
                     <li style={{ fontWeight: 300 }}>Tržištem dominiraju kupci iz Njemačke, Austrije i Slovenije</li>
                     <li style={{ fontWeight: 300 }}>Državljani  SAD-a preferiraju regije Istre (Pula) i južne Dalmacije (Split i Dubrovnik)</li>
@@ -93,7 +93,7 @@ const Page = () => {
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
                     Ca. <span style={{ fontWeight: 500 }}>90%</span> ukupne transakcijske vrijednosti ostvaruje se u regiji priobalja i glavnog grada (Zagreb).
                   </Typography>
-                  <ul>
+                  <ul style={{ paddingLeft: 16 }}>
                     <li style={{ fontWeight: 300 }}>U primorskoj Hrvatskoj godišnje se proda ca. 6.5 tisuća kuća i 13,6 tisuća stanova/apartmana</li>
                     <li style={{ fontWeight: 300 }}>U Zagrebačkoj regiji godišnje se proda ca. 3,4 tisuće kuća i 11,6 tisuća stanova/apartmana</li>
                   </ul>

@@ -30,7 +30,7 @@ const Page = () => {
                   Kontaktirajte nas
                 </Typography>
                 <Typography color="text.secondary" marginBottom={2}>
-                  Na nikad dinamičnijem tržištu nekretnina, učiniti ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
+                  Na nikad dinamičnijem tržištu nekretnina, učinit ćemo cijeli proces kupoprodaje ugodnim i jednostavnim.
                 </Typography>
                 <Typography
                   marginBottom={2}

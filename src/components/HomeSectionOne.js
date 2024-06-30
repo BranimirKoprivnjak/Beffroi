@@ -13,7 +13,7 @@ const Hero = ({ isMobile, padding }) => {
   });
 
   return (
-    <Grid container spacing={6} marginBottom={6}>
+    <Grid container spacing={6} marginBottom={isMobile ? -2 : 6}>
       <Grid
         item
         container

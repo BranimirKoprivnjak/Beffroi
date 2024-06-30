@@ -30,7 +30,7 @@ const Page = () => {
       <Main bgcolor={'background.paper'}>
         <Container>
           <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }} marginBottom={4}>
-            Kako uspješno prodati nekretninu?
+            Kako bezbrižno kupiti nekretninu?
           </Typography>
           <Grid container spacing={4}>
             <Grid
@@ -46,7 +46,7 @@ const Page = () => {
                 loading="lazy"
                 height={1}
                 width={1}
-                src={'blog1.jpg'}
+                src={'blog2.jpg'}
                 alt="..."
                 boxShadow={3}
                 maxWidth={600}
@@ -59,57 +59,57 @@ const Page = () => {
               <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
                 <Box>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Prodaja nekretnine može biti zahtjevan proces, ali s pravim koracima i stručnom pomoći, može postati jednostavan i bezazlen. 
-                    {isMobile && <br/>} U ovom članku, istražit ćemo ključne korake koje trebate poduzeti kako biste uspješno prodali svoju nekretninu, 
-                    i kako vam agencija može biti od pomoći u tom procesu.
+                    Kupnja nekretnine je veliki korak u životu svakog pojedinca. {isMobile && <br/>}Bilo da tražite svoj prvi dom, investicijsku priliku ili 
+                    želite promijeniti trenutno mjesto stanovanja, proces može biti zahtjevan. {isMobile && <br/>} 
+                    No, ne morate se nositi s tim sami. Agencija za nekretnine može biti vaš pouzdan partner kroz sve korake. {isMobile && <br/>}Evo kako vam možemo pomoći:
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Korak 1: Procjena vrijednosti nekretnine
+                    1. Definiranje vaših potreba i želja
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Prvi korak u prodaji nekretnine je određivanje njene tržišne vrijednosti. {isMobile && <br/>}  
-                    To možete učiniti samostalno istraživanjem tržišta ili angažiranjem profesionalnog procjenitelja. {isMobile && <br/>}  
-                    Agencija za nekretnine može vam pomoći pružanjem točne procjene vrijednosti temeljene na trenutnim tržišnim uvjetima 
-                    i usporedbi sličnih nekretnina.
+                    Prije nego što krenemo u potragu, važno je razumjeti što točno tražite. {isMobile && <br/>} 
+                    Koliko soba vam je potrebno? Želite li stan u centru grada ili kuću na mirnoj lokaciji? Kakav je vaš budžet? {isMobile && <br/>}
+                    Naši agenti će s vama proći kroz listu vaših želja i potreba kako bismo usmjerili pretragu na prave nekretnine.
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Korak 2: Priprema nekretnine za prodaju
+                    2. Pretraga i selekcija nekretnina
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Da biste privukli kupce, vaša nekretnina mora izgledati privlačno. {isMobile && <br/>} 
-                    To uključuje čišćenje, dekoriranje, manje popravke i možda čak i home staging. {isMobile && <br/>} 
-                    Agencija vam može dati savjete kako da vaša nekretnina zasja u najboljem svjetlu i privuče potencijalne kupce.
+                    S obzirom na vaše kriterije, naši agenti koriste svoje znanje i resurse kako bi pronašli nekretnine koje odgovaraju vašim zahtjevima. 
+                    {isMobile && <br/>} Štedimo vaše vrijeme tako što unaprijed pregledavamo ponude i selektiramo samo one koje vrijedi razmotriti.
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Korak 3: Oglašavanje nekretnine
+                    3. Organiziranje razgledavanja
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Dobra vidljivost vaše nekretnine ključna je za privlačenje kupaca. {isMobile && <br/>} 
-                    Agencija za nekretnine može vašu nekretninu oglašavati na svojoj web stranici, u tiskanim medijima, na društvenim mrežama 
-                    i na online platformama za prodaju nekretnina. {isMobile && <br/>}Profesionalne fotografije i detaljni opisi povećavaju šanse za prodaju.
+                    Kada izaberemo nekretnine koje vam mogu odgovarati, organiziramo razgledavanja u vrijeme koje vama odgovara. {isMobile && <br/>} 
+                    Naši agenti će biti s vama kako bi odgovorili na sva vaša pitanja i pružili dodatne informacije o nekretnini i okolici.
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Korak 4: Pregovaranje i prihvaćanje ponude
+                    4. Pregovaranje i ponuda
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Kada primite ponudu, važno je znati pregovarati. {isMobile && <br/>}Agencija za nekretnine može vam pomoći da procijenite ponudu 
-                    i savjetovati vas o najboljem postupku. {isMobile && <br/>}Ako se odlučite prihvatiti ponudu, agencija će voditi proces do završetka prodaje.
+                    Kada pronađete nekretninu koja vam se sviđa, slijedi faza pregovaranja. {isMobile && <br/>}
+                    Naši iskusni agenti će pregovarati u vaše ime kako bi osigurali najbolju moguću cijenu i uvjete kupnje.
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Korak 5: Pravni postupak i završetak prodaje
+                    5. Pravna provjera i dokumentacija
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Prodaja nekretnine uključuje pravne postupke kao što su izrada predugovora, provjera dokumentacije i potpisivanje kupoprodajnog ugovora. {isMobile && <br/>} 
-                    Agencija za nekretnine može vam pomoći u svim pravnim aspektima, osiguravajući da prodaja prođe glatko i bez problema. {isMobile && <br/>}
+                    Kupnja nekretnine uključuje i pravne aspekte. {isMobile && <br/>}Naša agencija će se pobrinuti za provjeru vlasničkih listova, 
+                    građevinskih dozvola i drugih važnih dokumenata. {isMobile && <br/>}Također, pomoći ćemo vam u prikupljanju svih potrebnih papira za završetak kupoprodaje.
                   </Typography>
                   <Typography variant={'h5'} gutterBottom sx={{ fontWeight: 500 }}>
-                    Zaključak
+                    6. Završetak kupoprodaje
                   </Typography>
                   <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
-                    Prodaja nekretnine može biti stresna, ali s pravim partnerom taj proces može biti ugodno iskustvo. {isMobile && <br/>}
-                    Angažiranjem agencije za nekretnine, dobivate stručnu podršku i savjete koji će vam pomoći da brzo i 
-                    efikasno prodate svoju nekretninu. {isMobile && <br/>}
-                    Ako razmišljate o prodaji, kontaktirajte nas i saznajte kako vam možemo pomoći da ostvarite svoje ciljeve. 
+                    Konačni korak je potpisivanje kupoprodajnog ugovora i prijenos vlasništva. {isMobile && <br/>}
+                    Naši agenti će biti uz vas kako bi osigurali da sve prođe glatko i bez stresa.
+                  </Typography>
+                  <Typography marginBottom={2} sx={{ fontWeight: 300 }}>
+                    U agenciji za nekretnine razumijemo da je kupnja nekretnine velika odluka i obvezujemo se da ćemo vam pružiti podršku na svakom koraku. 
+                    {isMobile && <br/>} S našim znanjem i iskustvom, možete biti sigurni da ćete donijeti pravu odluku. 
+                    {isMobile && <br/>} Ako razmišljate o kupnji nekretnine, kontaktirajte nas i krenimo zajedno u potragu za vašim idealnim domom.
                   </Typography>
                 </Box>
               </Box>

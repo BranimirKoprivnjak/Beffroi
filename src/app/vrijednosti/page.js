@@ -38,7 +38,7 @@ const Page = () => {
             <Grid
               item
               container
-              alignItems={'center'}
+              alignItems={'flex-start'}
               justifyContent={'center'}
               xs={12}
               md={6}
